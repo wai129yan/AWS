@@ -1,0 +1,134 @@
+EBS => elastic block store
+
+
+-> can be mounted to one instance at a time
+-> bound to a specific availability zone
+
+
+volume
+
+=> network drive(not physical)
+- use network to communicate the instance,a bit of latency
+- detached from an EC2 instrance and attached to another one quickly
+
+=> locked to an Availability Zone
+- EBS Volume in us-east-1a cannot be attached to us-east-1b
+- To move volume across,you first need to snapshot it
+
+=> provisioned Capacity
+-  billed for all the provisioned Capacity
+-  can be increased or decreased capacity
+
+=> Delete on termination
+- controlled by the AWS console or CLASSIC
+• preserve root volume when instance is terminated
+
+EBS snapshots
+
+-  a backup of an EBS volume
+- not necessaary to detach volume to snapshot (but Recommended)
+- snapshot can across AZ or Region 
+
+
+
+EBS Snapshot Features
+
+- mover snapshot to archive tier that is 75% cheaper
+- takes time within 24 to 72 hours to restore
+
+
+Recycle Bin for EBS Snapshots
+
+- set up rule to retain to recover them for an accidental deletion  
+- retention time 1 day to 1 year
+
+
+AMI => Amazon Machine Image
+
+- can create an instance by same set up 
+- data restored from EBS snapshot
+- launch instance from other AMIs
+
+
+EC2 Image Builder
+
+- auto create container or virtual images
+- Automate the creation , maintain , validate and test of AMIs
+- Can run on a schedule (weekly ,packages are updated)
+- Free service but pay for some underlying resources
+
+
+
+EC2 Instance Store
+
+- EBS volumes are network drives with good but limited performance
+- If you need a high-performance hardware disk,use EC2 Instance Store
+
+-> risk of data loss if hardware fails
+-> better input / output performance
+-> Instance store lose their storage if they are stopped (ephemeral)
+
+
+EFS - Elastic File system
+
+- managed network file system (NFS)
+- can be mounted on many EC2
+- highly available, scalable, expensive (per GB)
+
+
+
+EBS - EFS
+
+Storage Type
+- EBS volumes block storage can stored files on EC2 instance 
+- Connect Directly to EC2 instance can mounted to every instance
+
+- EFS is network file system (NFS) based on Protocol store files
+- Can be mounted on many EC2 instances
+
+Scalability
+- EBS volumes can be expanded to any size 
+- a single instance files can not access in a short period of time
+
+- EFS  can automatically scalable
+- can increase the size of your data automatically.
+
+Use Cases
+
+- Db app, app server and boot volumes (EBS)
+
+
+- Web serving, content management systems (CMS), big data applications 
+    shared storage solutions 
+
+EFS Infrequent Access (EFS-IA)
+- Storage class that is cost-optimized for files not access every day
+- Up to 92% lower cost than EFS Standard
+
+
+
+
+Amazon FSx
+
+- Fully managed service 
+- File system for Windows or Lustre
+
+-  Windows File Server is use for window application 
+- Lustre is use for High Performance Computing (HPC)
+
+
+EC2 Instance Storage 
+- Summary 
+• EBS volumes: 
+    • network drives attached to one EC2 instance at a time
+    • Mapped to an Availability Zones 
+    • Can use EBS Snapshots for backups / transferring EBS volumes across AZ 
+• AMI: create ready-to-use EC2 instances with our customizations 
+• EC2 Image Builder: automatically build,test and distribute AMIs 
+• EC2 Instance Store: 
+    • High performance hardware disk attached to our EC2 instance 
+    • Lost if our instance is stopped / terminated 
+    • EFS: network file system, can be attached to 100s of instances in a region 
+    • EFS-IA: cost-optimized storage class for infrequent accessed files 
+    • FSx for Windows: Network File System for Windows servers 
+    • FSx for Lustre: High Performance Computing Linux file syste

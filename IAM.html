@@ -1,0 +1,167 @@
+
+
+IAM Section
+
+Identity and Access Management
+
+IAM Users & Groups
+
+IAM - Identity and Access Management Global service
+
+RootAccount - Default
+
+Users - are people within your organization can be grouped
+
+Groups - only contain users not other groups
+
+
+
+IAM permissions
+
+Users or Groups  => assigned Json documents called policies
+
+Policies => define the permissions of the uses
+
+Least privilege principle => don't give More permissions than a User Needs
+
+
+Password Policy
+
+Strong passwords => higher security  for your account
+
+Set Up Policy  => minimum password length
+                     => Specific  characters length
+                     - including uppercase letters
+                     - lowercase letters
+                     - numbers
+                     - non-alphanumeric 
+IAM User  => allow to change their own passwords
+
+
+
+Multi Factor Authentication - MFA
+
+- You want to protect your Root Accounts and IAM users
+- Virtual MFA device 
+- Universal 2nd Factor (U2F) Security Key
+
+MFA devices options in AWS
+
+- Hardware Key Fob MFA Device
+- Hardware Key Fob MFA Devie for AWS GovCloud (US)
+
+
+
+Users access AWS => Three Points
+
+- AWS Management Console (protected by password + MFA)
+- AWS Command Line Interface (CLI -> protected by access keys)
+- AWS Software Developer kit (SDK -> for code, protected by access keys)
+
+- Access Keys are generated through the AWS Console
+- Users manage their own access keys
+=>  Access Keys are secret,just like a password. Don't share them
+
+Access Key ID  => username
+Secret Access Key => password
+
+
+AWS CLI
+
+- Direct access to the public API s of AWS services.
+
+AWS SDK
+
+- Embedded within your application.
+- Supports 
+  -> SDKs (JS,Python,Php,Net,Node.js,C++)
+  -> Mobile SDKs(Android.,iOs)
+  -> loT Device SDKs (Embedded C)
+
+IAM Roles of Services
+
+=> Common roles
+ - EC2 Instance Roles
+ - Lambda Function Roles
+ - Roles for CloudFormation
+
+
+IAM Security Tools
+
+- IAM Credentials Report (account level)
+
+- AWS Account တစ်ခုလုံးအတွက် အဓိက setting များကို စီမံခန့်ခွဲနိုင်သည်
+- Account billing information များကို access လုပ်နိုင်သည်
+- Root user privileges များရှိသည်
+- AWS Account တစ်ခုလုံး၏ security credentials များကို ပြောင်းလဲနိုင်သည်
+- AWS Account ကို ပိတ်သိမ်းခြင်း၊ ဖျက်သိမ်းခြင်းများ ပြုလုပ်နိုင်သည်
+
+- IAM Access Advisor (user level)
+
+- တစ်ဦးချင်းစီအတွက် သီးသန့် permission များသာ ရရှိသည်
+- Account owner မှ ခွင့်ပြုထားသော resource များကိုသာ အသုံးပြုနိုင်သည်
+- မိမိ၏ password နှင့် access key များကိုသာ ပြောင်းလဲနိုင်သည်
+- Specific service များ သို့မဟုတ် resource များကိုသာ access လုပ်နိုင်သည်
+- အခြားသူများ၏ permission များကို ပြောင်းလဲခွင့် မရှိပါ
+
+
+Summary
+
+- Don't use the root acount except for AWS account setup
+- One physical user
+- Assign users to groups and assign permissions to groups
+- Create a strong password policy
+- Use and enforce the use of MFA
+- Create and use Roles for giving permissions to AWS services
+- Use Access Keys for Programmatic Access (CLI / SDK)
+- Never share IAM users & Access Keys
+
+• Users: mapped to a physical user, has a password for AWS Console
+• Groups: contains users only
+• Policies: JSON document that outlines permissions for users or groups
+• Roles: for EC2 instances or AWS services
+• Security: MFA + Password Policy
+• AWS CLI: manage your AWS services using the command-line
+• AWS SDK: manage your AWS services using a programming language
+• Access Keys: access AWS using the CLI or SDK
+• Audit: IAM Credential Reports & IAM Access Advisor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Memory Optimize in AWS (မြန်မာဘာသာဖြင့်)
+
+AWS တွင် မှတ်ဉာဏ်အသုံးချမှု အကောင်းဆုံးဖြစ်စေရန် အောက်ပါအချက်များကို လုပ်ဆောင်နိုင်ပါသည်:
+
+• မှတ်ဉာဏ်များသော EC2 instance အမျိုးအစားများကို အသုံးပြုခြင်း (ဥပမာ - R5, X1, High Memory instances)
+• ElastiCache ကိုအသုံးပြု၍ in-memory caching ပြုလုပ်ခြင်း
+• Amazon RDS for Aurora ကဲ့သို့သော မှတ်ဉာဏ်အသုံးချမှု အကောင်းဆုံးဖြစ်အောင် ပြုလုပ်ထားသော database များကို အသုံးပြုခြင်း
+• Lambda function များအတွက် မှတ်ဉာဏ်ပမာဏကို သင့်လျော်စွာ သတ်မှတ်ပေးခြင်း
+• Amazon EMR cluster များတွင် မှတ်ဉာဏ်အသုံးချမှုကို ကောင်းမွန်စွာ စီမံခန့်ခွဲခြင်း
+• CloudWatch မှတဆင့် မှတ်ဉာဏ်အသုံးပြုမှုကို စောင့်ကြည့်စစ်ဆေးခြင်းနှင့် လိုအပ်သလို ချိန်ညှိခြင်း
+
+ဤနည်းလမ်းများဖြင့် AWS ပေါ်တွင် မှတ်ဉာဏ်အသုံးချမှုကို ပိုမိုကောင်းမွန်စေနိုင်ပါသည်။
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+
+Auto Scaling Groups
+
+- Scalability -> an application / system can handle greater loads by adapting
+- Two scalability => Vertical and Horizontal
+- Scalability is related to but distinct from high availability
+
+Vertical Scaling
+- Increasing the capacity of a single instance
+- runs on a t2.micro - application vertically -> running it on a t2.large
+- usually a limit to how much you can vertically scale
+
+Horizontal Scaling
+- Increasing the number of instances/ systmes of app
+- implies distributed systems
+- good in web app/ modern app
+- Increase number of instances
+
+
+=> scalability is improve to performance 
+=> High-availability is to ensure the system is always available 
+-> App can scalable but not high-availability it may cause downtime
+-> It has High Availability without Scalability it may cause performance issue
+
+
+Scalability vs Elasticity vs Agility
+
+- Scalability is the ability to increase the capacity of a system 
+  to handle a growing amount of work or demand
+
+- Elasticity is the ability to scale up or down automatically based on demand
+
+- Agility is the ability to quickly and easily respond to changing business needs
+
+
+
+
+
+Load balancing
+
+Load balancers are servers that forward internet traffic to multiple servers 
+
+- Traffic Distributing - send user requests to server
+- Health Monitoring - check server health if somethings wrong send another server to request
+- Session Persistence - user session connect respective other session 
+
+Load Balancer Types - 4 types
+
+- Application Load Balancer (HTTP/HTTPS)
+- Network load balancer (ultra-high performance , TCP)
+- Gateway load balancer - Layer 3 (firewall)
+
+- Classic load balancer (retired in 2023)
+
+Auto Scaling Group
+
+- Scaling policies => scale up or down based on metrics
+- Desired Capacity => build number of instances regarded by user
+- Health Checks => check instance if it is healthy or not replace it
+- Scheduled Scaling => scale up or down based on time
+
+- Cost Efficiency => scale up or down based on cost
+- Improved Availability => automatically replace the instance , can upgraded the app availability
+- flexibility and Agility => do dynamic scaling based on demand
+
+
+Scaling Strategies
+
+- Manual Scaling => manually scale up or down
+- Dynamic Scaling => scale up or down based on metrics
+- Predictive Scaling => scale up or down based on predicted demand
+    * predict future traffic 
+    * Automatically provisions the right number of EC2 instances

@@ -1,0 +1,173 @@
+
+
+EC2
+
+=> Elastic Compute Cloud = Infrastructure as a Service
+
+It mainly consists
+
+- Renting virtual machines (EC2)
+  * အရင်းအမြစ်ခွဲဝေခြင်း: ဗဟိုဆာဗာများသည် ရုပ်ပိုင်းဆိုင်ရာ ဆာဗာ၏ CPU, အထွေထွေ သင်္ကေတ (Memory), နှင့် အချက်အလက်သိုလှောင်မှု (Storage) ကဲ့သို့သော အရင်းအမြစ်များကို မျှဝေရန် အထူးဒီဇိုင်းပြုထားသည်။ ဤသို့ ရှိနေသော အရင်းအမြစ်များသည် စီးပွားရေးအတွက် အခွန်သက်သာစေသည်။
+
+  * ခွဲခြားမှု: ဗဟိုဆာဗာတိုင်းသည် လွတ်လပ်စွာ ဆောင်ရွက်နိုင်ပြီး အခြားဗဟိုဆာဗာများမှ သက်ရောက်မှုမရှိဘဲ အလုပ်လုပ်သည်။ ဥပမာ၊ တစ်ခုခု အဆင်မပြေနေပါက အခြားဗဟိုဆာဗာများတွင် မသက်ရောက်ပါ။
+
+  * ပမာဏတိုးချဲ့နိုင်မှု: ဗဟိုဆာဗာများကို လိုအပ်သလို ပမာဏတိုးချဲ့နိုင်ပြီး သစ်ဗဟိုဆာဗာများကို အလွယ်တကူ ဖန်တီးနိုင်သည်။ ယင်းတို့၏ သုံးစွဲမှုများကို လိုအပ်သလို ပြင်ဆင်နိုင်သည်။
+
+  * ကုန်ကျစရိတ်လျော့နည်းခြင်း: အများအားဖြင့် ရုပ်ပိုင်းဆိုင်ရာ ဆာဗာတစ်လုံးတွင် ဗဟိုဆာဗာများစွာကို လုပ်ဆောင်နိုင်သဖြင့် ကုန်ကျစရိတ်ကို လျော့နည်းစေပါသည်။
+
+  * ပြောင်းလဲနိုင်မှု: ဗဟိုဆာဗာများသည် တစ်ခုခုသော ရုပ်ပိုင်းဆိုင်ရာ ဆာဗာတွင် အမျိုးမျိုးသော အထူးစနစ်များနှင့် အခြားသော အပြင်ပန်းများကို လုပ်ဆောင်နိုင်ပါသည်။ ဤသည်မှာ မျိုးစုံသော သုံးစွဲမှုများအတွက် များစွာသော ရွေးချယ်မှုများပေးပါသည်။
+
+  - Storing data on virtual drives (EBS)
+- Distributing load across machine (ELB)
+- Scaling the services using an auto-scaling group (ASG)
+
+
+renting vitual machines
+storing data on virtual drives
+distributing  load across machines
+scaling the services using an  auto-scaling group
+
+Instance Types  *****
+
+- great for a diversity of workloads such as web servers or code repositories
+- Balance between
+  * Compute 
+  * Memory
+  * Networking
+
+General Purpose EC2 instance Types => t2.micro
+
+
+COMPUTE OPTIMIZED
+
+-> great for compute-intensive tasks  that require high performance processors
+
+  * Batch processing  workloads
+  * Media transcoding
+  * High performance web servers
+  * High performance computing (HPC)
+  * Scientific modeling & machine learning
+  * Dedicated gaming servers
+
+
+MEMORY 
+
+- Fast performance for workloads  that process large data set in memory 
+- Cases 
+  => High performance,relational  and non-relational databases
+  => Distributed web scale cache stores
+  => In memory database optimized for BI  (business intelligence)
+  => Applicartions performing real-time processing of big unstructured data
+
+STORAGE
+
+- Great for storage-intensive tasks that require high, sequential read and write 　　　　
+access to large data sets on local storage
+- Use Cases:
+  * High Frequency  online transaction processing OLTP systems
+  * Relational and NoSQL  databases
+  * Cache for in-memory databases (eg. Redis)
+  * Data warehousing applications
+  * Distributed file systems
+
+*** t2.micro is part of the AWS free tier (up to 750 hours per month)
+
+
+
+Security Groups
+* AWS Security Groups ဆိုတာ Cloud ပေါ်မှာရှိတဲ့ resources တွေအတွက် virtual firewall လို့ပြောလို့ရပါတယ်
+  - Inbound နဲ့ Outbound traffic တွေကို control လုပ်နိုင်ပါတယ်
+  - Port numbers တွေကို allow/deny လုပ်နိုင်ပါတယ်
+  - IP addresses တွေကနေ ဝင်လာတဲ့ traffic တွေကို စီမံခန့်ခွဲနိုင်ပါတယ်
+
+=> only contain allow rules
+=> reference by IP or by security group
+
+Deeper Dive
+
+* Acting as a firewall on EC2 instances
+* Regulate:
+  - Access to Ports
+  - Authorised IP ranges IPv4 and IPv6  => 32bit ,128bit => 192.168.1.1 | 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+  - Control of inbound network ( from  other to the instance )
+  - Control of outbound network (from the instance to other)
+
+
+- Can be attached to multiple instances
+- Locked down to a region / VPC combination
+- It’s good to maintain one separate security group for SSH access
+⁂ If your application is not accessible (time out), then it’s a security group issue
+⁂ If your application gives a “connection refused“ error, then it’s an application
+  error or it’s not launched
+- All inbound traffic is blocked by default
+- All outbound traffic is authorised by default
+
+CLASSIC Ports To Know
+
+• 22 = SSH (Secure Shell) - log into a Linux instance
+• 21 = FTP (File Transfer Protocol) – upload files into a file share
+• 22 = SFTP (Secure File Transfer Protocol) – upload files using SSH
+• 80 = HTTP – access unsecured websites
+• 443 = HTTPS – access secured websites
+• 3389 = RDP (Remote Desktop Protocol) – log into a Windows instance
+
+SSH can not use under window 10 !
+
+EC2 = > Connect all.
+
+SSH trouble shooting
+
+Students have the most problems with SSH
+
+- if one method works  => SSH,Putty or EC2 Instance Connect
+- if one method does not work => try the other (will not use SSH Much)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
