@@ -1,0 +1,83 @@
+
+S3  -> infinitely scaling storage
+Many websites use S3 as a backbone or an integration as well
+
+
+Amazon S3 use as a 
+- BackUp and storage/Disaster Recovery/Archive/Hybrid Cloud Storage/
+- Application hosting/Media hosting/Data lakes & big data analytics/
+- Software delivery/Static website
+
+
+S3-> Buckets
+
+=> allow to store objects files in buckets (directory)
+- globally unique name across all regions all accounts
+- they can define at the region level 
+- S3 look like a global service but buckets are created in a region
+- Naming convention
+
+- Objects (files) have a Key
+- Not start uppercase or no underscore / 3-36 character long
+
+- Max Obj size 5TB
+=> if uploading more than 5 must use "Multi-Part Upload"
+=> json base policies
+
+Security
+
+- User-Based
+- API call show be Allowed for a specific user from IAM
+
+=> Encrypt objects use encryption keys
+- Public Access Granting => use data for Public
+- Upload Encryption => to get security when encryption
+- Cross-Account Access Granting => permit to access other AWS account
+
+Bucket Setting for Block Public Access
+
+- There settings were created to prevent "Company Data Leaks"
+
+
+Static Website Hosting
+
+- WEB URL depends on the region
+
+
+S3 Replication (CRR - SRR)
+- Cross-Region Replication (CRR)
+- Same-Region Replication (SRR)
+
+
+- Buckets can be different accounts
+
+Standard - General Purpose
+
+- 99.99% availability
+- Use for frequent access data
+- Low latency and high throughput
+- Sustain 2 concurrent facility failures
+- Use Cases: Big Data analytics, mobile & gaming applications, content 
+distribution
+
+
+Infrequent Access (IA)
+- data is less frequently accessed  but requires rapid access when needed 
+- lower cost than S3 Standard
+- use Disaster Recovery and backup
+
+One Zone Infrequent Access (One Zone IA)
+- To store frequently used information
+- lower cost than other
+- data is stored in a single AZ
+- 99.5% Durability
+
+Amazon S3 Glacier Storage Classes
+- long-term archiving 
+- When not accessing often
+- Retrieval Time 1-12min
+
+
+S3 Glacier Deep Archive
+- Retrieval Time 12-48hr
+- Archive data that will not be used for a long time to find additional data
