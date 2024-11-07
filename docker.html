@@ -1,0 +1,77 @@
+Docker
+
+- a software development platform to deploy apps
+- Apps are packaged in containers that can be run on any OS
+- Apps run the same, regardless of where they’re run
+
+
+Docker images
+
+- Docker images are stored in Docker Repositories
+=> Ubuntu
+=> MySQL
+=> NodeJS
+=> Java…
+
+Private: Amazon ECR (Elastic Container Registry)
+
+=> Docker is sort of virtualization technology but not excactly
+=> Docker is a containerization technology => many containers on one serverless
+
+Elastic Container Service (ECS)
+
+Launch Docker containers on AWS
+
+- You must provision and maintain the infrastructure to run Docker containers
+- AWS takes care of starting / stopping containers
+- Integration with the Application Load Balancer
+
+
+
+
+Fargete
+
+- Launch Docker containers on AWS
+- Do not provision the infrastructure to manage
+- serverless offering
+- AWS runs containers for you based on the CPU / RAM you need
+
+Can use  with AWS Elastic Container Service (ECS) and AWS Elastic Kubernates Service (EKS)
+
+-> On ECS regard the Fargate launch type by running the task can deploy your app
+-> Can use Kubernetes by integration on AWS EKS
+
+Advantages
+
+- High performance => automatic performance increase when traffic increases
+- Cost savings =>  Effective cost savings because only necessary resources are used
+- Easy to scale => Not to worry the infrastructure and you can focus on the app
+
+
+
+Why AWS lambda
+
+=> Amazon EC2
+ 
+- Virtual Servers in the cloud 
+- Limited by RAM and CPU
+- Continuously running
+-  Auto-scaling
+
+=> Amazon Lambda
+
+- pay as you go 
+- scaling is automated
+- Virtual functions no servers to manage
+- no need to provision the infrastructure
+- Multi-language Support
+- Integration with Other AWS Services
+
+
+What time does AWS Lambda 
+
+- Data Processing , Real-time File Processing , Backend APIs, Scheduled Tasks
+
+Advantages
+
+- Lambda can be used serverless functions , it will be effective on application in a short time development, it can also saves the cost of use
