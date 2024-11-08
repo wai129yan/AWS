@@ -1,0 +1,75 @@
+46 - A company wants to make an upfront commitment for continued use of its production Amazon EC2 
+instances in exchange for a reduced overall cost.
+Which pricing options meet these requirements with the Lowest cost?
+
+Ans : Reversed Instances
+      Saving Plans
+
+47 - A company wants to migrate its on-premises relational database to the AWS cloud.
+The company wants to use infrastructure as close to its current geographical location as possible.
+Which AWS service or resource  should the company use to select its Amazon RDS deployment area?
+
+Ans : AWS Regions
+
+
+48 - A company is exploring the use of the AWS cloud and needs to create estimate for a project before the infrastructure is provisioned.Which AWS service or feature can be used to estimate costs before deployment?
+
+Ans : AWS Pricing Calculator
+
+
+49 - A company is building an application that needs to deliver images and videos globally with minimal latency.Which approach can the company use to accomplish this in a cost effective manner?
+
+Ans : Deliver the content through Amazon CloudFront
+
+
+50 - Which option is a benefit of the economies of scale based on the advantage of cloud computing?
+
+Ans : Lower variable costs over fixed costs
+
+51 - Which of the following is a software development framework that a company can use to define cloud resources as code and provision the resources through AWS cloudformation?
+
+Ans : AWS Cloud Development Kit (AWS CDK)
+
+
+52 - A company is developing an application that uses multiple AWS services.The application needs to use temporary limited privilege limited-privilege credentials to authentication with other AWS APIs.
+Which AWS service or feature should the company use to meet these authentication requirements?
+
+Ans : AWS Security Token Service (AWS STS)
+
+53 - Which AWS service is a cloud security posture management service that aggregates alerts from various AWS services and partner products in a standardized format?4
+
+Ans : AWS Security Hub
+
+54 - Which AWS service is always provided at no charge?
+
+Ans : AWS Identity and Access Management (IAM)
+
+55 - To reduce costs, a company is planning to migrate a NoSQL database to AWS.
+Which AWS service is fully managed and can automatically scale throughput capacity to meet database workload demands?
+
+Ans : Amazon DynamoDB
+
+
+56 - A company is using Amazon DynamoDB. Which task is the company's responsibility according to the AWS shared responsibility model?
+
+Ans : Manage database access permissions
+
+
+57 - A company has a test AWS environment . A company is planning on testing an application within AWS. The application testing can be interrupted and does not need to run continuously.
+Which Amazon EC2 purchasing option will meet these requirements most cost effectively?
+
+Ans : Spot Instance
+
+58 - Which AWS service gives users the ability to discover and protect sensitive data that is stored in Amazon S3 buckets?
+
+Ans : Amazon Macie
+
+
+59 - Which of the following services can be used to block network traffic to an instance?
+
+Ans : Security Groups , Network ACLs
+
+
+60 - Which AWS service can identify when an Amazon EC2 instance was terminated?
+
+Ans : AWS CloudTrail

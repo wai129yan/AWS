@@ -1,0 +1,71 @@
+61 - Which of the following is a fully managed MySQL - compatible database?
+
+Ans : Amazon Aurora
+
+
+62 - Which AWS service supports a hybrid architecture that gives users the ability to extend AWS infrastructure AWS services APIs and tools to data centers co-location environments or on- premises facilities?
+
+Ans : AWS Outposts
+
+63 - Which AWS service can run a managed PostgreSQL database that provides online transaction processing(OLTP)?
+
+Ans : Amazon RDS
+
+64 -  A company wants to provide managed Windows virtual desktops and applications to its remote over secure network connections.Which AWS services can the company use to meet these requirements?
+
+Ans : Amazon WorkSpaces
+      Amazon AppStream 2.0
+
+65 - A company wants to monitor for misconfigured security groups that are allowing unrestricted access to specific ports.Which AWS service will meet this requirement? 
+
+Ans : AWS Trusted Advisor
+
+
+66 - Which AWS service is a key value database that provides sub millisecond latency on a large scale?
+
+Ans : Amazon DynamoDB
+
+67 - A company is deploying a machine learning research project that will require a lot of compute power over several months.The ML processing jobs do not need to run at specific times.
+Which Amazon EC2 instance purchasing option will meet these requirements at the lowest cost?
+
+Ans : On-Demand Instances
+
+68 - Which AWS services or features provide recovery solutions for Amazon EC2 instances?
+
+Ans : EC2 Amazon Machine Images (AMIs)
+      Amazon Elastic Block Store (Amazon EBS) snapshots
+
+69 - Which AWS service provides command line access to AWS tools and resources directly from a web browser?
+
+Ans : AWS CloudShell
+
+
+70 - A network engineer needs to build a hybrid cloud architecture connecting on-premises networks to the AWS Cloud using AWS Direct Connect. Thecompany has a few VPCs in a single AWS Region and expects to increase the number of VPCs to hundreds over time.Which AWS service or feature should the engineer use to simplify and scale this connectivity as the VPCs increase in number?
+
+Ans : AWS Transit Gateway
+
+71 - A company wants to access its operations readiness . It also wants to be identify and mitigate any operational risks ahead of a new product launch.Which AWS service support plan offers guidance and support for this of event at no additional charge?
+
+Ans : AWS Business Support
+
+72 - A company wants to establish a schedule for rotating database user credentials.
+Which AWS service will support this requirement with the LEAST amount of opernational overhead?
+
+Ans : AWS Secrets Manager
+
+
+73 - Which AWS service or feature can be used to create a private connection between an on premises workload and 
+an AWS cloud workload?
+
+Ans : AWS PrivateLink
+
+
+74 - Which AWS service is used to provide encryption for Amazon EBS?
+
+Ans : AWS KMS
+
+
+75 - A company wants to manage its AWS cloud resources through a web interface.Which AWS service will meet this requirement?
+
+Ans : AWS Management Console
+

@@ -1,0 +1,75 @@
+31 - Which AWS service or feature is used to send both text and email messages from 
+distributed applications?
+
+Ans : Amazon Simple Notification Service (Amazon SNS)
+
+32 - A user needs programmatic access to AWS  resources through the AWS CLI or the AWS API.
+Which option will provide the user with the appropriate access?
+
+Ans : Access keys
+
+
+33 - A company runs thousands of simultaneous simulations using AWS Batch.Each simulation is stateless is fault tolerant and runs for up to hours.Which pricing model enables the company to optimize costs and meet these requirements?
+
+Ans : Spot Instances
+
+
+34 - What does the concept of agility mean in AWS cloud computing?
+
+Ans : The speed at which AWS resources are implemented 
+      The ability to experiment quickly
+
+
+35 - A company needs to block SQL injection attacks.
+Which AWS service or feature can meet this requirement?
+
+Ans : AWS WAF
+
+36 - Which AWS service or feature identifies whether an Amazon S3 bucket or an IAM role has been shared with an external entity?
+
+Ans : AWS IAM Access Analyzer
+
+
+37 - A cloud practitioner needs to obtain AWS compliance reports before migrating an environment to the AWS cloud.How can these reports be generated ?
+
+Ans : Download the reports from AWS Artifact
+
+
+38 - An ecommerce company has migrated its IT infrastructure from an on-premises data center to the AWS cloud.Which cost is the company's direct responsibility?
+
+Ans : Cost of application software licenses
+
+39 : A company is setting up AWS identity and access management (IAM) on an AWS account. Which recommendation complies with  IAM security best practices?
+
+Ans : Turn on multi-factor authentication (MFA) for added security during the login process
+
+
+40 - Elasticity in the AWS cloud refers to which of the following?
+
+Ans : The ability to rightsize resources as demand shifts
+      How easily resources can be procured when they are needed
+
+
+41 - Which service enables customers to audit API calls in their AWS accounts?
+
+Ans : AWS CloudTrail
+
+
+42 - What is a customer responsibility when using AWS Lambda according to the AWS shared responsibility model?
+
+Ans : Managing the code within the Lambda function
+
+43 - A company has 5TB of data stored in Amazon S3.The company plans to occasionally run queries on the data for analysis. Which AWS service should the company use to run these queries in the most cost effective manner?
+
+Ans : Amazon Athena
+
+
+44 - Which AWS service can be used at no additional cost?
+
+Ans : AWS Organizations
+
+45 - Which AWS cloud adoption framework capability belongs to the perspective?
+
+Ans : Cloud Fluency
+
+

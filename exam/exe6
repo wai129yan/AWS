@@ -1,0 +1,76 @@
+76 - Which of the following are advantages of the AWS cloud?
+
+Ans : High economies of scale
+      Launch globally in minutes
+
+77 - Which AWS cloud benefit is shown by an architecture ability to withstand failures with minimal downtime?
+
+
+Ans : Scalability
+
+78 - A developer needs to maintain development environment infrastracture and a production environment infrastracture in a repeatable fashion. Which AWS service should the developer use to meet these requirements?
+
+Ans : AWS CloudFormation
+
+
+79 - Which task is the customer's  responsibility according to the AWS shared responsibility model?
+
+Ans : Configure firewalls and networks
+
+
+80 - Which AWS service helps deliver highly available, application with fast failover for and mutlti-Region and Multi-AZ architecture?
+
+Ans : AWS Global Accelerator
+
+
+81 - A company has a set of ecommerce applications.The applications need to be able to send messages to each other.Which AWS service meets this requirement?
+
+Ans : Amazon Simple Queue Service (Amazon SQS)
+
+
+82 - What are the benefits of consolidated billing for AWS cloud services.
+
+Ans : Volume discounts
+     One bill for multiple accounts
+
+
+83 -  A user wants to review all Amazon S3 buckets with ACLs  and S3 bucket policies in the S3 console.Which AWS service or resource will meet this requirement?
+
+
+Ans : S3 Multi-Region Access Points
+
+
+84 - What is the best resource for a user to find compliance information and reports about AWS?
+
+Ans : AWS Artifact
+
+
+85 - Which AWS service enables companies to deploy an application close to end users?
+
+Ans : Amazon CloudFront
+
+
+86 - Which  AWS service or feature improves network performance by sending traffic through the AWS worldwide  network infrastructure?
+
+Ans : AWS Global Accelerator
+
+
+87 - Which AWS service provides highly durable object storage?
+
+Ans : Amazon S3
+
+
+88 - Which responsibility belongs to AWS when a company hosts its database on Amazon EC2 instances?
+
+Ans : Operation System installation
+
+
+89 - Which of the following are advantages of moving to the AWS cloud?
+
+Ans : The ability to use the pay as you go model
+    　No longer having to guess what capacity will be required
+
+
+90 - Which AWS service is a hybrid cloud storage service that provides on-premises users access to virtually unlimited cloud storage?
+
+Ans : AWS Storage Gateway
