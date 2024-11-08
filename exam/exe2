@@ -1,0 +1,73 @@
+16 - An e-learning platform needs to run an application for 2 months each year. 
+The application will be deployed on Amazon EC2 instances.Any application downtime during those 2 months must be avoided.Which EC2 purchasing option will meet these requirements Most cost-effectively?
+
+Ans : On-Demand Instances
+
+17 - A developer wants to deploy an application quickly on AWS  without manually creating the required resources.Which AWS service will meet these requirements?
+
+Ans : AWS Elastic Beanstalk
+
+18 - A company is storing senstitve customer data in an Amazon S3 bucket. The company wants to protect the data from accidental deletion or overwriting.Which S3 feature should the company use rto meet these requirements?
+
+Ans : S3 Versioning
+
+
+19 - Which AWS service provides the ability to manage infrastructure  as code?
+
+Ans : AWS CloudFormation
+
+20 - An online gaming company needs to choose a purchasing option to run its Amazon EC2 instances for 1 year.The web traffic  is constistent and any increase in traffic are predictable.The EC2 instances must be online and available without any disruption.Which EC2 instance purchasing option will meet these requirements Most cost-effectively?
+
+Ans : Reserved Instances
+
+
+21 - Which AWS service or feature allows a user to establish a dedicated network connection between a company's on-premises data center and the AWS cloud?
+
+Ans : AWS Direct Connect
+
+
+22 - Which option is a physical location of the AWS global infrastructure?
+
+Ans : AWS Region
+
+
+23 - A company wants to protect its AWS Cloud information ,system and assets while performing risk assessment and mitigation tasks. Which pillar of the AWS Well-Architected Framework is supported by these goals?
+
+Ans : Security
+
+24 - What is the purpose of having an internet gateway within a VPC?
+
+Ans : To allow communication between the VPC and the internet
+
+
+25 - A company is running a monolithic on premises application that does not scale and is difficult to maintain.The company has a plan to migrate the application to  AWS and divide the application into microservices.Which best paratice of the AWS well-architected framework is the company following with this plan?
+
+
+Ans : Implement loosely coupled dependencies
+
+
+26 -  A company has an ASW account. The company wants to audit its password and access key rotation details for compliance purposes.Which AWS service or tool will meet this requirement?
+
+Ans : IAM credential report
+
+
+27 - A company wants to receive a notification when a specific AWS cost threshold is reached.Which AWS service or tools can the company use to meet  this requirement?
+
+Ans : AWS Budgets, Amazon CloudWatch
+
+
+28  - Which AWS service or resource provides answers to the most frequently asked security related questions that AWS receives from its users?
+
+Ans : AWS Artifact
+
+
+29 -  Which tasks are customers responsibilities according to the AWS shared responsibility model?
+
+Ans : Configure the AWS provided security group firewall
+      Classify company assets in the AWS cloud
+
+
+30 - Which of the following are pillars of the AWS well-architected framework?
+
+Ans :Reliability
+     Operational Excellence
